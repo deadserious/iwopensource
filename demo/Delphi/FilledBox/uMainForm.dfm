@@ -1,0 +1,149 @@
+object formMain: TformMain
+  Left = 0
+  Top = 0
+  Width = 349
+  Height = 296
+  Background.Fixed = False
+  HandleTabs = False
+  SupportedBrowsers = [brUnknown, brIE, brNetscape6, brOpera]
+  DesignLeft = 314
+  DesignTop = 127
+  object ArcIWFilledBox1: TArcIWFilledBox
+    Left = 8
+    Top = 4
+    Width = 145
+    Height = 53
+    ZIndex = 10
+    BorderWidth = 3
+    DoSubmitValidation = True
+    ScriptEvents = <>
+  end
+  object IWLabel1: TIWLabel
+    Left = 16
+    Top = 12
+    Width = 56
+    Height = 13
+    ZIndex = 20
+    Font.Color = clWhite
+    Font.Enabled = True
+    Font.Size = 8
+    Font.Style = []
+    Caption = 'Username:'
+  end
+  object IWEdit1: TIWEdit
+    Left = 72
+    Top = 12
+    Width = 73
+    Height = 16
+    ZIndex = 20
+    BGColor = clNone
+    DoSubmitValidation = True
+    Editable = True
+    Font.Color = clNone
+    Font.Enabled = True
+    Font.Size = 8
+    Font.Style = []
+    FriendlyName = 'IWEdit1'
+    MaxLength = 0
+    ReadOnly = False
+    Required = False
+    ScriptEvents = <>
+    TabOrder = 0
+    PasswordPrompt = False
+  end
+  object IWLabel2: TIWLabel
+    Left = 20
+    Top = 32
+    Width = 53
+    Height = 13
+    ZIndex = 20
+    Font.Color = clWhite
+    Font.Enabled = True
+    Font.Size = 8
+    Font.Style = []
+    Caption = 'Password:'
+  end
+  object IWEdit2: TIWEdit
+    Left = 72
+    Top = 32
+    Width = 73
+    Height = 16
+    ZIndex = 20
+    BGColor = clNone
+    DoSubmitValidation = True
+    Editable = True
+    Font.Color = clNone
+    Font.Enabled = True
+    Font.Size = 8
+    Font.Style = []
+    FriendlyName = 'IWEdit1'
+    MaxLength = 0
+    ReadOnly = False
+    Required = False
+    ScriptEvents = <>
+    TabOrder = 1
+    PasswordPrompt = False
+  end
+  object ArcIWFilledBox2: TArcIWFilledBox
+    Left = 8
+    Top = 60
+    Width = 145
+    Height = 233
+    ZIndex = 10
+    FillColor = clMoneyGreen
+    BorderStyle = psDot
+    DoSubmitValidation = True
+    ScriptEvents = <>
+    OnClick = ArcIWFilledBox2Click
+  end
+  object ArcIWFilledBox3: TArcIWFilledBox
+    Left = 160
+    Top = 4
+    Width = 185
+    Height = 289
+    ZIndex = 10
+    FillStyle = bsDiagCross
+    BorderWidth = 8
+    DoSubmitValidation = True
+    ScriptEvents = <>
+    OnMouseDown = ArcIWFilledBox3MouseDown
+  end
+  object IWLabel3: TIWLabel
+    Left = 16
+    Top = 68
+    Width = 133
+    Height = 41
+    ZIndex = 20
+    Font.Color = clNone
+    Font.Enabled = True
+    Font.Size = 10
+    Font.Style = [fsBold]
+    AutoSize = False
+    Caption = 'Click the box for a special message.'
+  end
+  object IWLabel4: TIWLabel
+    Left = 168
+    Top = 12
+    Width = 169
+    Height = 53
+    ZIndex = 20
+    Font.Color = clNone
+    Font.Enabled = True
+    Font.Size = 14
+    Font.Style = [fsBold]
+    AutoSize = False
+    Caption = 'Click this box to see the coordinates.'
+  end
+  object lblCoords: TIWLabel
+    Left = 168
+    Top = 264
+    Width = 123
+    Height = 24
+    ZIndex = 20
+    Font.Color = clNone
+    Font.Enabled = True
+    Font.Size = 14
+    Font.Style = [fsBold]
+    Caption = 'Coordinates'
+  end
+end
