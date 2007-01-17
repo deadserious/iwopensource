@@ -1,0 +1,39 @@
+#------------------------------------------------------------------------------
+VERSION = BWS.01
+#------------------------------------------------------------------------------
+!ifndef ROOT
+ROOT = $(MAKEDIR)\..
+!endif
+#------------------------------------------------------------------------------
+MAKE = $(ROOT)\bin\make.exe -$(MAKEFLAGS) -f$**
+DCC = $(ROOT)\bin\dcc32.exe $**
+BRCC = $(ROOT)\bin\brcc32.exe $**
+#------------------------------------------------------------------------------
+PROJECTS = EmbeddedHTMLDemo.exe FilledBoxDemo.exe ImageURLDemo.exe \
+  PageControllerDemo.exe PayPalDemo.exe ScreenInfoDemo.exe ToolWindowDemo.exe
+#------------------------------------------------------------------------------
+default: $(PROJECTS)
+#------------------------------------------------------------------------------
+
+EmbeddedHTMLDemo.exe: EmbeddedHTML\IW6\EmbeddedHTMLDemo.dpr
+  $(DCC)
+
+FilledBoxDemo.exe: FilledBox\IW6\FilledBoxDemo.dpr
+  $(DCC)
+
+ImageURLDemo.exe: ImageURL\IW6\ImageURLDemo.dpr
+  $(DCC)
+
+PageControllerDemo.exe: PageController\IW6\PageControllerDemo.dpr
+  $(DCC)
+
+PayPalDemo.exe: Paypal\IW6\PayPalDemo.dpr
+  $(DCC)
+
+ScreenInfoDemo.exe: ScreenInfo\IW6\ScreenInfoDemo.dpr
+  $(DCC)
+
+ToolWindowDemo.exe: ToolWindow\IW6\ToolWindowDemo.dpr
+  $(DCC)
+
+
